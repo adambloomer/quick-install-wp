@@ -1,4 +1,11 @@
 Quick Install WP
 ================
 
-There are plenty of these scripts out there on GitHub. Here's my take on the command line install of Wordpress.
+A script for installing wordpress via terminal - grabs latest WP version plus a couple of my preferred plugins and the Starkers theme.
+		
+In the terminal navigate to the directory in which you wish to install Wordpress and run the following command:
+
+	   `curl https://raw.github.com/adambloomer/quick-install-wp/master/quick-install-wp.sh | sh`
+
+Give it a minute or so and you'll very quickly have a fresh new install of Wordpress ready for theming!
+
