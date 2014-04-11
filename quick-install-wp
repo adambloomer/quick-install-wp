@@ -1,16 +1,22 @@
 #!/bin/sh
 
 # Latest version of WP
-	echo "Fetching WordPress...";
-	wget --quiet http://wordpress.org/latest.zip;
-	unzip -q latest.zip;
+echo "Fetching WordPress...";
+wget --quiet http://wordpress.org/latest.zip;
+unzip -q latest.zip;
+
+# remove default shipped themes
+echo "Removing the stock wordpress themes...";
+rm -rf wordpress/wp-content/themes
+mkdir wordpress/wp-content/themes	
+	
 
 # Add Roots theme
-	echo "Fetching Roots...";
-	wget --quiet https://github.com/roots/roots/archive/master.zip;
-	unzip -q master.zip;
-	mv roots-master roots
-	mv roots wordpress/wp-content/themes/
+echo "Fetching Roots...";
+wget --quiet https://github.com/roots/roots/archive/master.zip;
+unzip -q master.zip;
+mv roots-master roots
+mv roots wordpress/wp-content/themes/
 
 
 # Simple Custom Post Order
