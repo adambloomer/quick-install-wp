@@ -5,11 +5,11 @@
 	wget --quiet http://wordpress.org/latest.zip;
 	unzip -q latest.zip;
 
-# Add Starkers theme
-	echo "Fetching Starkers...";
-	wget --quiet https://github.com/viewportindustries/starkers/archive/master.zip;
+# Add Roots theme
+	echo "Fetching Roots...";
+	wget --quiet https://github.com/roots/roots/archive/master.zip;
 	unzip -q master.zip;
-	mv starkers-master wordpress/wp-content/themes/
+	mv roots wordpress/wp-content/themes/
 
 
 # Simple Custom Post Order
